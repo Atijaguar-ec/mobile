@@ -5,7 +5,7 @@ export default ({ config }) => ({
     ...config.expo,
     name: 'INATrace',
     slug: 'inatrace-mobile',
-    version: '1.9.0',
+    version: '1.9.1',
     orientation: 'portrait',
     icon: './assets/images/icon.png',
     scheme: 'myapp',
@@ -18,12 +18,12 @@ export default ({ config }) => ({
     assetBundlePatterns: ['**/*'],
     ios: {
       supportsTablet: true,
-      bundleIdentifier: 'com.sunesis.inatracemobile',
+      bundleIdentifier: 'com.atijaguar.inatrace.ec',
       privacyManifests: {
         NSPrivacyAccessedAPITypes: [
           {
             NSPrivacyAccessedAPIType:
-              'NSPrivacyAccessedAPICategoryUserDefaults',
+              'NSPrivacyAccessedAPICategoryUserDefaults', 
             NSPrivacyAccessedAPITypeReasons: ['CA92.1'],
           },
         ],
@@ -37,7 +37,7 @@ export default ({ config }) => ({
         foregroundImage: './assets/images/adaptive-icon.png',
         backgroundColor: '#ffffff',
       },
-      package: 'com.sunesis.inatrace',
+      package: 'com.atijaguar.inatrace.ec',
       permissions: [
         'ACCESS_COARSE_LOCATION',
         'ACCESS_FINE_LOCATION',
@@ -75,7 +75,7 @@ export default ({ config }) => ({
         origin: false,
       },
       eas: {
-        projectId: '92b692fc-0be1-40d1-9c1d-bd10d94be7d0',
+        projectId: '754f0445-7411-4a26-b19b-130344f5d8bf',
       },
       EXPO_PUBLIC_API_URI: process.env.EXPO_PUBLIC_API_URI,
       EXPO_PUBLIC_API_TEST_URI: process.env.EXPO_PUBLIC_API_TEST_URI,
